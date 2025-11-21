@@ -6,6 +6,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+use Orchid\Screen\AsSource;
 
 /**
  * @property int $id
@@ -15,6 +16,8 @@ use Illuminate\Support\Carbon;
  */
 class MeterReading extends Model
 {
+    use AsSource;
+
     /**
      * @var array<int, string>
      */
